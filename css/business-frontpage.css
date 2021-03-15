@@ -29,5 +29,61 @@ body {
 .home_title{
   color: white;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 50px;
 }
+
+
+.cardAbout{
+  background: linear-gradient(-65deg, #32c506, #07ca9d,#405518, #dbd805);
+  background-size: 1000% 400%;
+  margin: auto;
+  /* width:55%;
+  border-radius: 105px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top:5px ;
+  padding-bottom:5px ; */
+  height: 30vh;
+  position: relative;
+  margin-bottom: 5vh;
+  animation: gradient 10s ease infinite;
+  animation-timing-function: ease-in;   
+ 
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* .cardAbout {
+  background: linear-gradient(125deg, #19237c, #1a3694, #2689c2, #0d475e);
+  background-size: 1000% 400%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:59% 0%}
+  50%{background-position:42% 100%}
+  100%{background-position:59% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:59% 0%}
+  50%{background-position:42% 100%}
+  100%{background-position:59% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:59% 0%}
+  50%{background-position:42% 100%}
+  100%{background-position:59% 0%}
+} */
