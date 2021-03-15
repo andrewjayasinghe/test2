@@ -53,8 +53,15 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
-          <h1 class="home_title">The Company</h1>
-          <p class="lead mb-5 text-white-50"></p> 
+
+            <h3 class="ml1">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters">The Company</span>
+                  <span class="line line2"></span>
+                </span>
+              </h3>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         </div>
       </div>
     </div>
@@ -65,34 +72,66 @@
 
     <div class="row">
       <div class="col-md-8 mb-5">
-        <h2>Who Are We</h2>
+        <h1 class="ml11">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">Who Are We</span>
+          </span>
+        </h1>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-        <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+        <p class="ml9">
+          <span class="text-wrapper">
+            <span class="letters">Lorem ipsum dolor sit amet, consectetur 
+              adipisicing elit. A deserunt neque tempore recusandae animi
+               soluta quasi? Asperiores rem dolore eaque vel,
+               porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!
+               Lorem ipsum dolor sit amet, consectetur 
+               adipisicing elit. A deserunt neque tempore recusandae animi
+                soluta quasi? Asperiores rem dolore eaque vel,
+                porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores
+              </span>
+          </span>
+        </p>  
+               
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <!-- <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
       </div>
       <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>Start Bootstrap</strong>
-          <br>3481 Melrose Place
-          <br>Beverly Hills, CA 90210
-          <br>
-        </address>
-        <address>
-            <p title="Phone">Phone:
-                (123) 456-7890<br>
-                Email:
-                name@example.com
-              </p>
-        </address>
+        <h1 class="ml6">
+          <span class="text-wrapper">
+            <span class="letters"><h3>Contact Us</h3>
+           
+            </span>
+             <hr>
+            <address style="font-size: 17px; text-decoration: none;">
+              <strong>Nikoi Aqua</strong>
+              <br>3481 Melrose Place
+              <br>Beverly Hills, CA 90210
+              <br>
+            </address>
+            <address>
+              <p title="Phone" style="font-size: 17px;">Phone:
+                  (123) 456-7890<br>
+                  Email:
+                  name@example.com
+                </p>
+          </address>
+          </span>
+        </h1>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+       
+        
       </div>
     </div>
     <!-- /.row -->
 
     <div class="row">
+      
       <div class="col-md-4 mb-5">
+        <div class="fade-in">
         <div class="card h-100">
           <img class="card-img-top" src="fin_dir.jpg" alt="" >
           <div class="card-body">
@@ -109,11 +148,13 @@
             </p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
           </div>
         </div>
       </div>
+    </div>
       <div class="col-md-4 mb-5">
+        <div class="fade-in">
         <div class="card h-100">
           <img class="card-img-top" src="https://placehold.it/300x200" alt="">
           <div class="card-body">
@@ -121,11 +162,13 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
           </div>
         </div>
       </div>
+      </div>
       <div class="col-md-4 mb-5">
+        <div class="fade-in">
         <div class="card h-100">
           <img class="card-img-top" src="https://placehold.it/300x200" alt="">
           <div class="card-body">
@@ -133,12 +176,15 @@
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+            <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
           </div>
         </div>
       </div>
+      </div>
     </div>
     <!-- /.row -->
+    
+
 
   </div>
   <!-- /.container -->
@@ -151,10 +197,110 @@
     <!-- /.container -->
   </footer>
 
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml1 .letter',
+        scale: [0.3,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i+1)
+    }).add({
+        targets: '.ml1 .line',
+        scaleX: [0,1],
+        opacity: [0.5,1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+    }).add({
+        targets: '.ml1',
+        opacity: 5,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 300
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 5,
+    duration: 1000,
+    delay: 1000
+  });
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 700,
+    elasticity: 600,
+    delay: (el, i) => 15 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 5,
+    duration: 1000,
+    delay: 1000
+  });
+
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 5,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
 </body>
 
 </html>
+
