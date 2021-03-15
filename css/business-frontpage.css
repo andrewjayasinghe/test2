@@ -17,6 +17,15 @@ body {
   margin-bottom: 6vh;
 }
 
+.masthead1 {
+  height: 50vh;
+  min-height: 20px;
+  background-image: url('../list.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 6vh;
+}
 .home_title{
   color: white;
   font-weight: 300;
