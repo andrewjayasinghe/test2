@@ -142,13 +142,21 @@ body {
 
 .fade-in {
 
-    animation: 5s ease 0s normal forwards 1 fadeIn;
+    animation: 2s ease 0s normal forwards 1 fadeIn;
   
 }
 
 @keyframes fadeIn {
   0% { opacity:0; }
-  66% { opacity:0;}
+  10% { opacity:0.1;}
+  20% { opacity:0.2;}
+  30% { opacity:0.3;}
+  40% { opacity:0.4;}
+  50% { opacity:0.5;}
+  60% { opacity:0.6;}
+  70% { opacity:0.7;}
+  80% { opacity:0.8;}
+  90% { opacity:0.9;}
   100% { opacity:1;}
 }
 
