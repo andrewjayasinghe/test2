@@ -124,7 +124,13 @@ body {
   font-weight: 300;
   font-size: 20px;
 }
-
+.ml9.text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
 .tex {
   position: relative;
   font-weight: 300;
