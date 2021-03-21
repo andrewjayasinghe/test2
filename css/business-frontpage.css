@@ -125,9 +125,10 @@ body {
   font-size: 20px;
 }
 
-.ml9 .text-wrapper {
+.tex {
   position: relative;
-  display: inline-block;
+  font-weight: 300;
+  font-size: 20px;
   padding-top: 0.2em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
@@ -180,3 +181,4 @@ body {
   display: inline-block;
   line-height: 1em;
 }
+
