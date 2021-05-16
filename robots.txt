@@ -1,0 +1,7 @@
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: *
+Disallow: 
+
+Sitemap: https://www.nikoiaqua.com/sitemap.xml
